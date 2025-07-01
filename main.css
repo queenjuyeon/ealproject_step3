@@ -1,0 +1,172 @@
+.background-img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  
+}
+
+
+.emotion-menu-wrapper {
+  position: fixed;
+  bottom: 190px;
+  left: 80px;
+  z-index: 200;
+}
+
+.emotion-menu-trigger {
+  background: cyan;
+  padding: 70px 50px;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 8px;
+  opacity: 0;
+}
+
+
+.emotion-menu-container {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+  position: absolute;
+  bottom: 100%;
+  margin-bottom: 20px;
+
+  
+  left: -20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(40px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.emotion-menu-container.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.emotion-menu {
+  list-style: none;
+  margin: 0;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.emotion-menu a {
+  all: unset;
+  color: white;
+  font-size: 40px;
+  padding: 8px 20px;
+  cursor: pointer;
+}
+
+
+.emotion-menu li :hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+}
+
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.5); /* 어두운 배경 */
+  backdrop-filter: blur(5px);
+  z-index: 90;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.menu-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+
+
+
+.main-drama {
+  position: fixed;
+  padding: 110px 200px;
+  top: 400px;
+  left: 350px;
+  z-index: 100;
+  opacity: 0;  
+}
+
+.main-literature {
+  position: fixed;
+  padding: 110px 200px;
+  top: 800px;
+  left: 150px;
+  z-index: 100;
+  opacity: 0;  
+}
+
+.main-art {
+  position: fixed;
+  padding: 110px 200px;
+  bottom: 300px;
+  left: 450px;
+  z-index: 100;
+  opacity: 0;  
+}
+
+.main-music {
+  position: fixed;
+  padding: 110px 200px;
+  bottom: 200px;
+  left: 1000px;
+  z-index: 100;
+  opacity: 0;  
+}
+
+.main-lifestyle {
+  position: fixed;
+  padding: 110px 200px;
+  bottom: 200px;
+  right: 560px;
+  z-index: 100;
+  opacity: 0;  
+}
+
+.main-nature {
+  position: fixed;
+  padding: 110px 200px;
+  top: 650px;
+  right: 200px;
+  z-index: 100;
+  opacity: 0;  
+}
+
+.main-humour {
+  position: fixed;
+  padding: 110px 200px;
+  top: 300px;
+  right: 520px;
+  z-index: 100;
+  opacity: 0;
+
+}
+
+
+
+.category-buttons :hover {
+    cursor: pointer;
+}
